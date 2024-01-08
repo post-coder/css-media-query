@@ -1,0 +1,77 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* UTILITIES */
+
+
+
+/* Layout */
+nav {
+    display: none;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 0 16px;
+}
+
+/* Spacing */
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+
+/* query da tablet in su */
+@media screen and (min-width: 480px) {
+    
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .columns .col {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        
+        padding: 12px 36px;
+        border-bottom: 1px gray solid;
+    }
+
+
+    .columns .col { 
+        width: 25%;
+    }
+
+}
